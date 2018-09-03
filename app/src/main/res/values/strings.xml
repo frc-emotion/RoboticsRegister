@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">RoboticsRegister</string>
+    <string name="name">Full Name</string>
+    <string name="grade">Grade Level</string>
+    <string name="number">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="software">Software Team</string>
+    <string name="clear">Clear</string>
+
+    <string-array name="grade_array">
+        <item>Freshman :(</item>
+        <item>Sophomore :|</item>
+        <item>Junior :)</item>
+        <item>Senior ;)</item>
+    </string-array>
+</resources>
