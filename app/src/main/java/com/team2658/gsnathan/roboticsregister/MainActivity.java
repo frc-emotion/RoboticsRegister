@@ -221,8 +221,8 @@ public class MainActivity extends AppCompatActivity {
         protected Void doInBackground(MyTaskParams... params) {
             try {
                 GMailSender sender = new GMailSender("team2658temp@gmail.com", "SoftwareRox1");
-                sender.sendMail("Thanks for signing up for Team 2658 " + params[0].name + "!",
-                        "Thanks for signing up! An email will be sent out with the meeting date. Please do not reply to this email, reply to frcteam2658@gmail.com.",
+                sender.sendMail("Thanks for signing up for Team 2658 " + params[0].name + "!" + " (DO NOT REPLY)",
+                        "Hello,\n\n Thanks for signing up! A follow up email will be sent out later with information about our interest meeting. If you have any questions please email us at frcteam2658@gmail.com. We look forward to meeting you!\n\nSincerely,\nYour Team 2658 Leads and Officers",
                         "team2658temp@gmail.com",
                         params[0].email);
             } catch (Exception e) {
