@@ -1,6 +1,6 @@
-<p align="center">
-  <img src="https://github.com/frc-emotion/RoboticsRegister/blob/master/app/src/main/res/mipmap-xhdpi/ic_launcher.png" />
-</p>
+
+![logo](app/src/main/res/mipmap-xhdpi/ic_launcher.png)
+
 
 <h1 align="center">
   RoboticsRegister
