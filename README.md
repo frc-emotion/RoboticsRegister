@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://gitlab.com/JavaCafe01/RoboticsRegister/blob/master/app/src/main/res/mipmap-xhdpi/ic_launcher.png" />
+  <img src="https://github.com/frc-emotion/RoboticsRegister/blob/master/app/src/main/res/mipmap-xhdpi/ic_launcher.png" />
 </p>
 
 # RoboticsRegister
