@@ -6,6 +6,7 @@
     <string name="email">Email</string>
     <string name="software">Software Team</string>
     <string name="clear">Clear</string>
+    <string name="share">Share</string>
 
     <string-array name="grade_array">
         <item>Freshman :(</item>
