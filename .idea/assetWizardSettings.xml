@@ -36,6 +36,8 @@
                                       <entry key="backgroundAssetType" value="COLOR" />
                                       <entry key="backgroundColor" value="ac9918" />
                                       <entry key="foregroundImage" value="C:\Users\Gokul Swaminathan\Desktop\WhatsApp Image 2018-09-04 at 8.33.46 PM.jpeg" />
+                                      <entry key="legacyIconShape" value="CIRCLE" />
+                                      <entry key="webIconShape" value="CIRCLE" />
                                     </map>
                                   </option>
                                 </PersistentState>
