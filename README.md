@@ -1,6 +1,6 @@
-<p align="center">
-  <img src="https://github.com/frc-emotion/RoboticsRegister/blob/master/app/src/main/res/mipmap-xhdpi/ic_launcher.png" />
-</p>
+
+![logo](app/src/main/res/mipmap-xhdpi/ic_launcher.png)
+
 
 <h1 align="center">
   RoboticsRegister
@@ -30,4 +30,4 @@ This app was built for [Team 2658](https://www.team2658.org/).
   Downloads
 </h2>
 
-Download the apk [here](https://github.com/frc-emotion/RoboticsRegister/releases).
+Download the apk [here](https://gitlab.com/JavaCafe01/RoboticsRegister/tags).
