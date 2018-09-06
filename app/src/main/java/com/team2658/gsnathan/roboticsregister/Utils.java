@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.net.Uri;
 import android.widget.Toast;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import java.io.File;
 
 
@@ -31,9 +33,9 @@ public class Utils {
     }
 
     //merge two arrays to one
-    //public static String[] mergeArrays(String[] first, String[] last) {
-      //  return ArrayUtils.addAll(first, last);
-    //}
+    public static String[] mergeArrays(String[] first, String[] last) {
+        return ArrayUtils.addAll(first, last);
+    }
 
     //create an email
     public static Intent emailIntent(String emailAddress, String subject, String text) {

@@ -7,6 +7,7 @@
     <string name="software">Software Team</string>
     <string name="clear">Clear</string>
     <string name="share">Share</string>
+    <string name="view_data">View Data</string>
 
     <string-array name="grade_array">
         <item>Freshman</item>
