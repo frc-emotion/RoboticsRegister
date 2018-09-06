@@ -10,8 +10,8 @@ android {
         applicationId "com.team2658.gsnathan.roboticsregister"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 2
-        versionName "1.1"
+        versionCode 3
+        versionName "1.2"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -42,6 +42,5 @@ dependencies {
     implementation files('libs/additionnal.jar')
     implementation files('libs/activation.jar')
     implementation files('libs/mail.jar')
-
     implementation 'com.vistrav:ask:2.5'
 }
