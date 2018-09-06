@@ -2,8 +2,11 @@ package com.team2658.gsnathan.roboticsregister;
 
 import android.os.Environment;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
+import com.google.android.material.bottomappbar.BottomAppBar;
+import com.google.android.material.snackbar.Snackbar;
 import com.levitnudi.legacytableview.LegacyTableView;
 import com.opencsv.CSVReader;
 
@@ -18,6 +21,8 @@ import static com.levitnudi.legacytableview.LegacyTableView.MESH;
 
 public class ExcelViewActivity extends AppCompatActivity {
 
+    private BottomAppBar bar;
+
     //contains the titles for the csv file
     private final String[] HEADERS = {"Name", "Grade", "Number", "Email"};
 
@@ -28,6 +33,9 @@ public class ExcelViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_excelview);
 
+        bar = (BottomAppBar) findViewById(R.id.bar);
+        setSupportActionBar(bar);
+
         //try to load the data of file to array
         try {
             loadData();
@@ -36,6 +44,11 @@ public class ExcelViewActivity extends AppCompatActivity {
         }
 
         createTable(HEADERS, data);
+    }
+
+    public void doSomething(View v)
+    {
+        Snackbar.make(v, "You pressed this button! :)", Snackbar.LENGTH_LONG).show();
     }
 
     private void createTable(String[] headers, String[] data) {
