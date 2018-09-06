@@ -9,9 +9,9 @@
     <string name="share">Share</string>
 
     <string-array name="grade_array">
-        <item>Freshman :(</item>
-        <item>Sophomore :|</item>
-        <item>Junior :)</item>
-        <item>Senior ;)</item>
+        <item>Freshman</item>
+        <item>Sophomore</item>
+        <item>Junior</item>
+        <item>Senior</item>
     </string-array>
 </resources>

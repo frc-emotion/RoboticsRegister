@@ -57,4 +57,18 @@ public class Utils {
         return Intent.createChooser(email, "Send email...");
     }
 
+    //create an email with an attachments
+    public static Intent emailIntent(String emailAddress, String subject, String text, File[] attachments) {
+        Uri path1 = Uri.fromFile(attachments[0]);
+        Uri path2 = Uri.fromFile(attachments[1]);
+        Intent email = new Intent(Intent.ACTION_SEND);
+        email.setType("text/email");
+        email.putExtra(Intent.EXTRA_EMAIL, new String[]{emailAddress});
+        email.putExtra(Intent.EXTRA_SUBJECT, subject);
+        email.putExtra(Intent.EXTRA_TEXT, text);
+        email.putExtra(Intent.EXTRA_STREAM, path1);
+        email.putExtra(Intent.EXTRA_STREAM, path2);
+        return Intent.createChooser(email, "Send email...");
+    }
+
 }

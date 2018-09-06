@@ -75,9 +75,24 @@ public class MainActivity extends AppCompatActivity {
         email_field = (TextInputEditText) findViewById(R.id.email_input);
     }
 
+    private String gradeToLevel(String grade)
+    {
+        String gradeword = grade.toLowerCase();
+        if(gradeword.contains("freshman"))
+            return "9";
+        else if(gradeword.contains("sophomore"))
+            return "10";
+        else if(gradeword.contains("junior"))
+            return "11";
+        else if(gradeword.contains("senior"))
+            return "12";
+        else
+            return "grade";
+    }
+
     public void saveData(View v) {
 
-        String grade = grade_spinner.getText().toString();
+        String grade = gradeToLevel(grade_spinner.getText().toString());
         String name = name_field.getText().toString();
         String number = number_field.getText().toString();
         String email = email_field.getText().toString();
@@ -205,7 +220,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     class MyAsyncClass extends AsyncTask<MyTaskParams, Void, Void> {
-
         ProgressDialog pDialog;
 
         @Override
