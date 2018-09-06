@@ -269,6 +269,8 @@ public class MainActivity extends AppCompatActivity {
                     Utils.showToast("Error, could not send email", Toast.LENGTH_SHORT, getApplicationContext());
                 }
                 return true;
+            case R.id.action_view:
+                startActivity(Utils.actIntent(this, ExcelViewActivity.class));
             default:
                 return super.onOptionsItemSelected(item);
         }
