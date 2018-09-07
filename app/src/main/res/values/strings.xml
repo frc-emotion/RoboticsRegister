@@ -9,6 +9,7 @@
     <string name="share">Share</string>
     <string name="view_data">View Data</string>
     <string name="view">View Data</string>
+    <string name="save">Save</string>
 
     <string-array name="grade_array">
         <item>Freshman</item>

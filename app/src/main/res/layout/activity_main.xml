@@ -14,16 +14,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                android:id="@+id/grade_spinner"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="20dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:hint="@string/grade"
-                app:met_floatingLabel="normal" />
-
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
@@ -74,6 +64,27 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/grade_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/grade"
+                app:met_floatingLabel="normal" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:drawableStart="@drawable/save_icon"
+                android:onClick="saveData"
+                android:text="@string/save"
+                android:textSize="30sp" />
+
         </androidx.appcompat.widget.LinearLayoutCompat>
 
     </androidx.core.widget.NestedScrollView>
@@ -81,18 +92,9 @@
         <com.google.android.material.bottomappbar.BottomAppBar
             android:id="@+id/bar"
             style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
-            app:fabCradleRoundedCornerRadius="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:backgroundTint="@color/yellow" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="saveData"
-            app:layout_anchor="@id/bar"
-            app:srcCompat="@drawable/save_icon" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
